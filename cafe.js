@@ -168,6 +168,6 @@ document.getElementById("clear_order").onclick = () => {
     document.getElementById('Bis').textContent = 'Biscotti: ' + countBis;
     document.getElementById('Scone').textContent = 'Scone: ' + countScone;
 
-    document.getElementById("total").innerText = "$: " + total;
+    document.getElementById("total").innerText = `$: ${total}`;
 
 }
