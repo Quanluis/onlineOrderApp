@@ -142,6 +142,8 @@ document.getElementById("buttons").onclick =() => {
 
     // This Button needs to send this info to a server.
 
+    window.location.href = "checkOut.html";
+
     document.getElementById("total").innerText = "$ " + total.toFixed(2);
 
 }
