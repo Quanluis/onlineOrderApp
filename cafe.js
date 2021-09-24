@@ -137,7 +137,7 @@ document.getElementById("images/scone_info.jpg").onclick = () => {
 
 // Place order button
 
-document.getElementById("buttons").onclick =() => {
+document.getElementById("place_order").onclick =() => {
   
 
     // This Button needs to send this info to a server.
@@ -168,6 +168,6 @@ document.getElementById("clear_order").onclick = () => {
     document.getElementById('Bis').textContent = 'Biscotti: ' + countBis;
     document.getElementById('Scone').textContent = 'Scone: ' + countScone;
 
-    document.getElementById("total").innerText = total;
+    document.getElementById("total").innerText = "$: " + total;
 
 }
