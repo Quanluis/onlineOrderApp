@@ -1,59 +1,98 @@
 // Global variables
 
-var sum = 0;
-var total;
+var total = 0;
 
 // Items 
-var espresso = 2.75;
-var latte = 2.50;
-var cappuccino = 4.50;
-var coffee = 3.00;
-var biscotti = 3.75;
-var scone = 3.50;
+var espresso = 0;
+var latte = 0;
+var cappuccino = 0;
+var coffee = 0;
+var biscotti = 0;
+var scone = 0;
 
-// new images 
+// Mouse over/out functions
 
-const newImagesEspresso = new Image();
-newImagesEspresso.src = "images/espresso.jpg"
+function setNewImageEspresso(){
+    document.getElementById("images/espresso_info.jpg").src = "images/espresso_info.jpg";
+}
+function setOldImageEspresso(){
+    document.getElementById("images/espresso_info.jpg").src = "images/espresso.jpg";
+}
+function setNewImageLatte(){
+    document.getElementById("images/latte_info.jpg").src = "images/latte_info.jpg";
+}
+
+function setOldImageLatte(){
+    document.getElementById("images/latte_info.jpg").src = "images/latte.jpg";
+}
+
+function setNewImageCap(){
+    document.getElementById("images/cappuccino_info.jpg").src = "images/cappuccino_info.jpg";
+}
+
+function setOldImageCap(){
+    document.getElementById("images/cappuccino_info.jpg").src = "images/cappuccino.jpg";
+}
+
+function setNewImageCof(){
+    document.getElementById("images/coffee_info.jpg").src = "images/coffee_info.jpg";
+}
+function setOldImageCof(){
+    document.getElementById("images/coffee_info.jpg").src = "images/coffee.jpg";
+}
+
+function setNewImageBis(){
+    document.getElementById("images/biscotti_info.jpg").src = "images/biscotti_info.jpg"
+}
+
+function setOldImageBis(){
+    document.getElementById("images/biscotti_info.jpg").src = "images/biscotti.jpg"
+}
+
+function setNewImageScone(){
+    document.getElementById("images/scone_info.jpg").src = "images/scone_info.jpg"
+}
+
+function setOldImageScone(){
+    document.getElementById("images/scone_info.jpg").src = "images/scone.jpg"
+}
+
+
+// Selection menu -- Adds to grand total
 
 document.getElementById("images/espresso_info.jpg").onclick = () => {
 
-
-   document.getElementById("order").innerHTML = espresso;
-}
-
-document.getElementById("images/espresso_info.jpg").onmouseover = () => {
-    console.log("This is hovering");
+    total += 1.95;
 }
 
 document.getElementById("images/latte_info.jpg").onclick = () => {
     console.log("This is latte.")
 
-    total =+ latte;
+    total += 2.95;
 }
 
 document.getElementById("images/cappuccino_info.jpg").onclick = () => {
     console.log("This is cappuccino.")
 
-    total =+ cappuccino;
+    total += 3.45;
 }
 
 document.getElementById("images/coffee_info.jpg").onclick = () => {
     console.log("This is coffee.")
 
-    total =+ coffee;
+    total += 1.75;
 }
 
 document.getElementById("images/biscotti_info.jpg").onclick = () => {
     console.log("This is biscotti.")
 
-    total =+ biscotti;
+    total += 1.95;
 }
 
 document.getElementById("images/scone_info.jpg").onclick = () => {
     console.log("This is scone.")
 
-    total =+ scone;
+    total += 2.95;
 }
 
 // Place order button
